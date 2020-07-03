@@ -1,9 +1,9 @@
 import React from "react";
 import Product from "./product";
-function productList() {
+function ProductList() {
   return (
     <Product />
   );
 }
 
-export default productList;
+export default ProductList;
