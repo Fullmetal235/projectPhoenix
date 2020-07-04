@@ -1,9 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from '../logo.svg'
+import logo from '../logo.svg';
+import styled from 'styled-components';
+import { ButtonContainer } from './button'
 function Navbar() {
+
   return (
-    <nav className="navbar navbar-expand-sm bg-primary navbar-dark px-sm-5">
+    <NavWrap className="navbar navbar-expand-sm  navbar-dark px-sm-5">
       {/*https://www.iconfinder.com/icons/5912565/footwear_group_human_people_shoe_shoes_woman_icon creative commons (Atribution 3.0 unported); https://www.iconfinder.com/lifengquan52*/}
       <Link to='/'>
         <img src={logo} alt="store" className="navbar-brand" />
@@ -16,14 +19,26 @@ function Navbar() {
 
       </ul>
       <Link to='cart' className='ml-auto'>
-        <button>
-          <i className="fas fa-cart-plus" />
+        <ButtonContainer>
+          <span className="mr-2">
+            <i className="fas fa-cart-plus" />
+          </span>
+
           my cart
-        </button>
+        </ButtonContainer>
       </Link>
-    </nav >
+    </NavWrap >
 
   );
 }
+const NavWrap = styled.nav`
+background: var(--mainBlue);
+.nav-link{
+  color: var(--mainWhite)!important;
+  font-size: 1.3rem;
+  text-transforn: capitalize!important;
+}
+`
+
 
 export default Navbar; 
