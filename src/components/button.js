@@ -6,13 +6,13 @@ export const ButtonContainer = styled.button`
    background: transparent;
    border: 0.05rem solid var(--lightBlue);
    color: var(--lightBlue);
-   border-radius: 0.5rem;
+   border-radius: 0.05rem;
    curser: pointer;
    margin: 0.2rem 0.5rem 0.2rem 0;
    transition: all 0.5s ease-in-out;
    &:hover{
      background: var(--lightBlue);
-     color: var(--mainBlue);
+     color: var(--mainWhite);
    }
    &:focus{
      outline: none;

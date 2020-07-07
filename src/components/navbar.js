@@ -6,7 +6,7 @@ import { ButtonContainer } from './button'
 function Navbar() {
 
   return (
-    <NavWrap className="navbar navbar-expand-sm  navbar-dark px-sm-5">
+    <NavWrap className="navbar navbar-expand-sm b navbar-dark px-sm-5">
       {/*https://www.iconfinder.com/icons/5912565/footwear_group_human_people_shoe_shoes_woman_icon creative commons (Atribution 3.0 unported); https://www.iconfinder.com/lifengquan52*/}
       <Link to='/'>
         <img src={logo} alt="store" className="navbar-brand" />
