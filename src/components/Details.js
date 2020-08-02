@@ -1,8 +1,20 @@
-import React from 'react';
-
-function Details() {
+import React, {Component} from 'react';
+import {ProductConsumer} from '../context';
+import {Link} from 'react-router-dom';
+import{ButtonContainer} from './button'
+export default class Details extends Component {
+	render(){
     return (
-        <h3>Hello from details</h3>
-    )
+        <ProductConsumer>
+		{(value)=>{
+			const {id,company,img, info, price, title,inCart }	= value.detailProduct
+			return(
+			<div className="container py-5">
+				{/*title*/}
+				</div>
+			)
+			}}
+		</ProductConsumer>
+    );
 }
-export default Details
+}
