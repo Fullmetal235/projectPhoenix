@@ -7,6 +7,7 @@ import Cart from './components/cart';
 import Details from './components/Details';
 import ProductList from './components/productList';
 import PageNotFound from './components/pageNotFound';
+import Modal from './components/modal'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route component={PageNotFound} />
 
       </Switch>
+      <Modal />
 
 
 
